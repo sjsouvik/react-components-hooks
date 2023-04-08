@@ -1,10 +1,19 @@
 import "./App.css";
-import { StarRating, Timer, AutoComplete, Faqs, TagInput } from "./components";
+import {
+  StarRating,
+  Timer,
+  AutoComplete,
+  Faqs,
+  TagInput,
+  FileExplorer,
+} from "./components";
 
 function App() {
   return (
     <div className="App">
       <h1>React Components</h1>
+
+      <FileExplorer />
 
       <StarRating value={2} />
 
