@@ -1,10 +1,12 @@
 import "./App.css";
-import { StarRating } from "./components";
+import { StarRating, Timer } from "./components";
 
 function App() {
   return (
     <div className="App">
       <StarRating />
+
+      <Timer time={{ minutes: 2, seconds: 35 }} />
     </div>
   );
 }
