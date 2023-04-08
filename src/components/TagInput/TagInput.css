@@ -1,0 +1,39 @@
+.tag-input {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid lightgrey;
+  border-radius: 0.5rem;
+}
+
+.tag-input input {
+  padding: 0.5rem 0.5rem;
+  border: none;
+}
+
+.tag-input input:focus {
+  outline: transparent;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.tag {
+  margin-right: 0.5rem;
+  background-color: lightblue;
+  padding: 0.25rem 0.5rem;
+  padding-right: 0;
+  border-radius: 0.25rem;
+}
+
+.tag-cancel {
+  background-color: white;
+  text-align: center;
+  margin-left: 1rem;
+  padding: 0.25rem;
+  background-color: brown;
+  color: white;
+  cursor: pointer;
+}

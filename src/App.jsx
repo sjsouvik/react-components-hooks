@@ -1,5 +1,5 @@
 import "./App.css";
-import { StarRating, Timer, AutoComplete, Faqs } from "./components";
+import { StarRating, Timer, AutoComplete, Faqs, TagInput } from "./components";
 
 function App() {
   return (
@@ -13,6 +13,8 @@ function App() {
       <Faqs />
 
       <AutoComplete />
+
+      <TagInput />
     </div>
   );
 }
