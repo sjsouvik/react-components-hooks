@@ -19,7 +19,7 @@ export const ExplorerItem = (props) => {
   const inputKeyDownHandler = (e) => {
     if (e.key === "Enter") {
       const newItem = {
-        id: "323",
+        id: crypto.randomUUID(),
         name: e.target.value,
         isFolder: addingFileOrFolder === "folder",
         items: [],
@@ -61,7 +61,7 @@ export const ExplorerItem = (props) => {
         style={{ display: isOpen ? "block" : "none", paddingLeft: "2.5rem" }}
       >
         {item.items.map((item) => (
-          <ExplorerItem key={item.name} item={item} />
+          <ExplorerItem key={item.name} item={item} updateData={updateData} />
         ))}
 
         {showInput && (

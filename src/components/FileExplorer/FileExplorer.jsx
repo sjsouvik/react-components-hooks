@@ -44,15 +44,18 @@ export const FileExplorer = () => {
   const [explorerData, setExplorerData] = useState(data);
 
   const updateData = (folderIdToUpdate, itemDetails) => {
-    const updatedData = {
-      ...explorerData,
-      items: explorerData.items.map((item) =>
-        item.id === folderIdToUpdate
-          ? { ...item, items: [...item.items, itemDetails] }
-          : item
-      ),
-    };
+    function addFileOrFolder(treeData) {
+      if (treeData.id === folderIdToUpdate && treeData.isFolder) {
+        return { ...treeData, items: [...treeData.items, itemDetails] };
+      }
 
+      let latestItems = [];
+      latestItems = treeData.items.map((item) => addFileOrFolder(item));
+
+      return { ...treeData, items: latestItems };
+    }
+
+    const updatedData = addFileOrFolder(explorerData);
     setExplorerData(updatedData);
   };
 
