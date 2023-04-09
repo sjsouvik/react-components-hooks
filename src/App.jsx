@@ -6,6 +6,7 @@ import {
   Faqs,
   TagInput,
   FileExplorer,
+  Comment,
 } from "./components";
 
 function App() {
@@ -24,6 +25,8 @@ function App() {
       <AutoComplete />
 
       <TagInput />
+
+      <Comment />
     </div>
   );
 }
