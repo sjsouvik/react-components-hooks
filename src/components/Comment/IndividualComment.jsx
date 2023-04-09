@@ -24,8 +24,10 @@ export const IndividualComment = (props) => {
 
   return (
     <li style={{ margin: "1rem 0" }}>
-      {comment.title}
-      <button onClick={replyButtonClickHandler}>Reply</button>
+      <span className="comment">{comment.title}</span>
+      <button className="btn reply-btn" onClick={replyButtonClickHandler}>
+        Reply
+      </button>
 
       <ul>
         {comment.replies.map((reply) => (
@@ -41,11 +43,15 @@ export const IndividualComment = (props) => {
             <input
               type="text"
               placeholder="Reply..."
+              autoFocus
               value={reply}
               onChange={(e) => setReply(e.target.value)}
               style={{ marginTop: "1rem" }}
+              className="commentbox"
             />
-            <button onClick={addReplyHandler}>ADD</button>
+            <button className="btn" onClick={addReplyHandler}>
+              ADD
+            </button>
           </>
         )}
       </ul>

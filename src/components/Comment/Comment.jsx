@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { IndividualComment } from "./IndividualComment";
+import "./Comment.css";
 
 const commentData = {
   id: "0",
@@ -11,13 +12,16 @@ export const Comment = () => {
   const [comments, setComments] = useState(commentData);
 
   const addCommentHandler = () => {
-    setComments({
-      ...comments,
-      replies: [
-        ...comments.replies,
-        { id: crypto.randomUUID(), title: comment, replies: [] },
-      ],
-    });
+    if (comment) {
+      setComments({
+        ...comments,
+        replies: [
+          ...comments.replies,
+          { id: crypto.randomUUID(), title: comment, replies: [] },
+        ],
+      });
+      setComment("");
+    }
   };
 
   const updateComments = (commentId, newComment) => {
@@ -44,8 +48,11 @@ export const Comment = () => {
         placeholder="Comment..."
         value={comment}
         onChange={(e) => setComment(e.target.value)}
+        className="commentbox"
       />
-      <button onClick={addCommentHandler}>ADD</button>
+      <button className="btn" disabled={!comment} onClick={addCommentHandler}>
+        ADD
+      </button>
       <ul>
         {comments.replies.map((comment) => (
           <IndividualComment

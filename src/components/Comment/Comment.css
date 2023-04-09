@@ -1,0 +1,29 @@
+.commentbox {
+  padding: 0.75rem 0.5rem;
+  width: 30%;
+  border-radius: 0.5rem;
+  border-width: thin;
+  font-size: 1rem;
+}
+
+.comment {
+  font-size: 1.2rem;
+}
+
+.btn {
+  padding: 0.75rem 0.5rem;
+  width: 10%;
+  border-radius: 0.5rem;
+  margin-left: 1rem;
+  border-width: thin;
+  cursor: pointer;
+}
+
+.btn:focus {
+  outline: 2px solid black;
+  outline-offset: 2px;
+}
+
+.reply-btn {
+  padding: 0.5rem;
+}
