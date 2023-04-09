@@ -31,26 +31,20 @@ export const ExplorerItem = (props) => {
   };
 
   if (!item.isFolder) {
-    return <div style={{ marginBottom: "0.5rem" }}>{item.name}</div>;
+    return <div className="mb">{item.name}</div>;
   }
 
   return (
     <>
       <div
-        style={{
-          cursor: "pointer",
-          display: "flex",
-          alignItems: "center",
-          marginBottom: "0.5rem",
-          gap: "0.5rem",
-        }}
+        className="folder-wrapper mb"
         onClick={() => setOpen((open) => !open)}
       >
         <img
           src={isOpen ? openFolder : FolderIcon}
           height="15"
           width="15"
-          alt=""
+          alt="folder"
         />
         <span>{item.name}</span>
         <button onClick={(e) => addNewHandler(e, "file")}>File +</button>
@@ -68,7 +62,7 @@ export const ExplorerItem = (props) => {
           <input
             type="text"
             autoFocus
-            style={{ marginBottom: "1rem" }}
+            className="mb-1"
             onKeyDown={inputKeyDownHandler}
             onBlur={() => setShowInput(false)}
           />

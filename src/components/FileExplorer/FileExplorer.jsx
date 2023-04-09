@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ExplorerItem } from "./ExplorerItem";
+import "./FileExplorer.css";
 
 export const data = {
   id: "0",
@@ -43,10 +44,10 @@ export const data = {
 export const FileExplorer = () => {
   const [explorerData, setExplorerData] = useState(data);
 
-  const updateData = (folderIdToUpdate, itemDetails) => {
+  const updateData = (folderIdToUpdate, newItemToAdd) => {
     function addFileOrFolder(treeData) {
       if (treeData.id === folderIdToUpdate && treeData.isFolder) {
-        return { ...treeData, items: [...treeData.items, itemDetails] };
+        return { ...treeData, items: [...treeData.items, newItemToAdd] };
       }
 
       let latestItems = [];
