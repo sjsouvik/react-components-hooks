@@ -11,6 +11,10 @@ export const IndividualComment = (props) => {
   };
 
   const addReplyHandler = () => {
+    if (!reply) {
+      return;
+    }
+
     const newReply = {
       id: crypto.randomUUID(),
       title: reply,
@@ -49,7 +53,7 @@ export const IndividualComment = (props) => {
               style={{ marginTop: "1rem" }}
               className="commentbox"
             />
-            <button className="btn" onClick={addReplyHandler}>
+            <button disabled={!reply} className="btn" onClick={addReplyHandler}>
               ADD
             </button>
           </>

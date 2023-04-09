@@ -27,3 +27,7 @@
 .reply-btn {
   padding: 0.5rem;
 }
+
+ul {
+  list-style: none;
+}

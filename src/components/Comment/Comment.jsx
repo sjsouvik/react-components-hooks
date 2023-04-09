@@ -11,19 +11,6 @@ export const Comment = () => {
   const [comment, setComment] = useState("");
   const [comments, setComments] = useState(commentData);
 
-  const addCommentHandler = () => {
-    if (comment) {
-      setComments({
-        ...comments,
-        replies: [
-          ...comments.replies,
-          { id: crypto.randomUUID(), title: comment, replies: [] },
-        ],
-      });
-      setComment("");
-    }
-  };
-
   const updateComments = (commentId, newComment) => {
     function addReply(treeData) {
       if (treeData.id === commentId) {
@@ -38,6 +25,19 @@ export const Comment = () => {
 
     const updatedData = addReply(comments);
     setComments(updatedData);
+  };
+
+  const addCommentHandler = () => {
+    if (comment) {
+      const newComment = {
+        id: crypto.randomUUID(),
+        title: comment,
+        replies: [],
+      };
+
+      updateComments("0", newComment);
+      setComment("");
+    }
   };
 
   return (
