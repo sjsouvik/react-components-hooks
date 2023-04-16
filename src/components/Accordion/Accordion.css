@@ -12,6 +12,9 @@
 
 .question {
   cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-size: inherit;
 }
 
 .answer {
