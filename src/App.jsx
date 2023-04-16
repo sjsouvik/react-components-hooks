@@ -7,6 +7,7 @@ import {
   TagInput,
   FileExplorer,
   Comment,
+  ModalWrapper,
 } from "./components";
 
 function App() {
@@ -27,6 +28,8 @@ function App() {
       <TagInput />
 
       <Comment />
+
+      <ModalWrapper />
     </div>
   );
 }
