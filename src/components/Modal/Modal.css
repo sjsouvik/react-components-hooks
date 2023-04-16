@@ -1,3 +1,7 @@
+button {
+  cursor: pointer;
+}
+
 .modal {
   position: fixed;
   top: 0;
@@ -5,26 +9,37 @@
   left: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.3);
-}
 
-.position-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .modal-dialog {
-  width: 20%;
-  padding: 1rem;
+  width: 30%;
   border-radius: 0.5rem;
   background-color: white;
 }
 
 .modal-header {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid lightgray;
 }
 
-button {
-  cursor: pointer;
+.modal-title {
+  margin: 0;
+}
+
+.modal-content {
+  padding: 1rem;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+  border-top: 1px solid lightgray;
 }
