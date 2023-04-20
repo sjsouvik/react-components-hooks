@@ -1,9 +1,21 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import "./Modal.css";
 
 const Modal = (props) => {
   const { open, title, content, footer, onClose } = props;
+
+  const keyDownHandler = (e) => {
+    if (e.key === "Escape") {
+      onClose();
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("keydown", keyDownHandler);
+
+    return () => document.removeEventListener("keydown", keyDownHandler);
+  }, []);
 
   return (
     open && (
