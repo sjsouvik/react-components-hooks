@@ -1,19 +1,15 @@
 import { useEffect, useRef } from "react";
 
-const useClickOutside = (showComponent, setShowComponent) => {
+const useClickOutside = (callback) => {
   const domNode = useRef(null);
 
-  useEffect(() => {
-    const outsideClickHandler = (e) => {
-      if (
-        showComponent &&
-        domNode.current &&
-        !domNode.current.contains(e.target)
-      ) {
-        setShowComponent(false);
-      }
-    };
+  const outsideClickHandler = (event) => {
+    if (domNode.current && !domNode.current.contains(event.target)) {
+      callback();
+    }
+  };
 
+  useEffect(() => {
     document.addEventListener("click", outsideClickHandler, true);
 
     return () =>

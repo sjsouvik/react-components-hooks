@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
-
 import "./Modal.css";
+import useClickOutside from "../../hooks/useClickOutside";
 
 const Modal = (props) => {
   const { open, title, content, footer, onClose } = props;
+
+  const ref = useClickOutside(onClose);
 
   const keyDownHandler = (e) => {
     if (e.key === "Escape") {
@@ -20,7 +22,7 @@ const Modal = (props) => {
   return (
     open && (
       <div className="modal">
-        <div className="modal-dialog">
+        <div className="modal-dialog" ref={ref}>
           <section className="modal-header">
             <h3 className="modal-title">{title}</h3>
             <button onClick={onClose}>X</button>
