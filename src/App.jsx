@@ -8,6 +8,7 @@ import {
   FileExplorer,
   Comment,
   ModalWrapper,
+  TabExample,
 } from "./components";
 
 function App() {
@@ -30,6 +31,8 @@ function App() {
       <Comment />
 
       <ModalWrapper />
+
+      <TabExample />
     </div>
   );
 }

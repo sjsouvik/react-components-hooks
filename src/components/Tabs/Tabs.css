@@ -1,0 +1,22 @@
+.tab-menu button {
+  background-color: transparent;
+  border: 0;
+  padding: 0.5rem 1rem;
+}
+
+.tab-menu button.active,
+.tab-menu button:hover {
+  border-bottom: 2px solid lightblue;
+}
+
+.tab-content {
+  margin-top: 1rem;
+}
+
+.tab-item {
+  display: none;
+}
+
+.tab-item.active {
+  display: block;
+}
