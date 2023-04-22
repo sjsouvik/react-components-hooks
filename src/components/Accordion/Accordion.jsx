@@ -45,4 +45,15 @@ const Accordion = (props) => {
   );
 };
 
+/*
+
+we made `AccordionItem` as a property of the `Accordion`, 
+which means if we want to use `Accordion` component in any file, we'll just have to import `Accordion`
+
+reference: https://www.patterns.dev/posts/compound-pattern
+
+*/
+
+Accordion.Item = AccordionItem;
+
 export default Accordion;

@@ -1,4 +1,4 @@
-import Accordion, { AccordionItem } from "./Accordion";
+import Accordion from "./Accordion";
 
 const accordionData = [
   {
@@ -24,9 +24,9 @@ export const Faqs = () => {
       <h2>FAQs</h2>
       <Accordion defaultActiveId="1">
         {accordionData.map(({ id, question, answer }) => (
-          <AccordionItem key={id} id={id} label={question}>
+          <Accordion.Item key={id} id={id} label={question}>
             {answer}
-          </AccordionItem>
+          </Accordion.Item>
         ))}
       </Accordion>
     </div>
