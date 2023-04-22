@@ -24,22 +24,22 @@ const Tabs = (props) => {
   return (
     <>
       <div className="tab-menu">
-        {tabItems.map((item) => (
+        {tabItems.map(({ props: { index, label } }) => (
           <button
-            key={`tab-button-${item.props.index}`}
-            className={activeTab === item.props.index ? "active" : ""}
-            onClick={() => changeTabHandler(item.props.index)}
+            key={`tab-button-${index}`}
+            className={activeTab === index ? "active" : ""}
+            onClick={() => changeTabHandler(index)}
           >
-            {item.props.label}
+            {label}
           </button>
         ))}
       </div>
       <div className="tab-content">
-        {tabItems.map((item) => (
+        {tabItems.map(({ props }) => (
           <TabItem
-            key={`tab-item-${item.props.index}`}
-            isActive={activeTab === item.props.index}
-            {...item.props}
+            key={`tab-item-${props.index}`}
+            isActive={activeTab === props.index}
+            {...props}
           />
         ))}
       </div>
