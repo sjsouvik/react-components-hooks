@@ -9,6 +9,7 @@ import {
   Comment,
   ModalWrapper,
   TabExample,
+  PhoneNumberInput,
 } from "./components";
 
 function App() {
@@ -33,6 +34,8 @@ function App() {
       <ModalWrapper />
 
       <TabExample />
+
+      <PhoneNumberInput />
     </div>
   );
 }
