@@ -1,3 +1,20 @@
+/*
+
+It is common to see conditional rendering based on hover state of some element.
+
+We can achieve it by CSS pseudo class `:hover`, but for more complex cases it might be better to have state controlled by script.
+
+Now you are asked to create a `useHover()` hook.
+
+```
+function App() {
+  const [ref, isHovered] = useHover()
+  return <div ref={ref}>{isHovered ? 'hovered' : 'not hovered'}</div>
+}
+```
+
+*/
+
 import { useCallback, useEffect, useRef, useState } from "react";
 
 export const useHover = () => {
