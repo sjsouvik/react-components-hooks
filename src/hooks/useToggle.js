@@ -7,8 +7,8 @@ It's useful when we want to take some action into it's opposite action,
 for example: show and hide modal, show more/show less text, open/close side menu.
 */
 
-export const useToggle = (initiaState = false) => {
-  const [toggle, setToggle] = useState(initiaState);
+export const useToggle = (initialState = false) => {
+  const [toggle, setToggle] = useState(initialState);
 
   const updateToggle = () => setToggle((toggle) => !toggle);
 
