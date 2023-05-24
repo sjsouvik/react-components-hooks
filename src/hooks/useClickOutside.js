@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 
-const useClickOutside = (callback) => {
+export const useClickOutside = (callback) => {
   const domNode = useRef(null);
 
   const outsideClickHandler = (event) => {
@@ -18,5 +18,3 @@ const useClickOutside = (callback) => {
 
   return domNode;
 };
-
-export default useClickOutside;

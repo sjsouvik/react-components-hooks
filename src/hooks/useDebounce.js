@@ -1,6 +1,6 @@
 import { useRef } from "react";
 
-const useDebounce = (fn, delay) => {
+export const useDebounce = (fn, delay) => {
   let timerId = useRef(null);
 
   return function () {
@@ -14,5 +14,3 @@ const useDebounce = (fn, delay) => {
     timerId.current = setTimeout(() => fn.apply(context, args), delay);
   };
 };
-
-export default useDebounce;

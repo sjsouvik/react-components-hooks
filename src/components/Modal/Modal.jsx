@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./Modal.css";
-import useClickOutside from "../../hooks/useClickOutside";
+import { useClickOutside } from "../../hooks";
 
 const Modal = (props) => {
   const { open, title, content, footer, onClose } = props;

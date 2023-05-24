@@ -1,8 +1,7 @@
 import { useRef, useState } from "react";
 import { flushSync } from "react-dom";
 import "./AutoComplete.css";
-import useDebounce from "../../hooks/useDebounce";
-import useClickOutside from "../../hooks/useClickOutside";
+import { useDebounce, useClickOutside } from "../../hooks";
 
 const data = [
   "axis",
@@ -44,7 +43,6 @@ export const AutoComplete = () => {
   const [searchResults, setSearchResults] = useState([]);
   const [activeSuggestionIndex, setActiveSuggestionIndex] = useState(-1);
   const activeSuggestionRef = useRef(null);
-  const domNode = useClickOutside(closeSearchSuggestion);
 
   const search = (text) => {
     const filteredList = data.filter((item) =>
@@ -57,8 +55,6 @@ export const AutoComplete = () => {
       setSearchResults([]);
     }
   };
-
-  const improvedFn = useDebounce(search, 300);
 
   const searchChangeHandler = (e) => {
     const text = e.target.value;
@@ -91,14 +87,17 @@ export const AutoComplete = () => {
     scrollToActiveSuggestion();
   };
 
-  function closeSearchSuggestion() {
+  const closeSearchSuggestion = () => {
     setSearchResults([]);
-  }
+  };
 
   const selectSearchResult = (searchResult) => {
     setSearchText(searchResult);
     closeSearchSuggestion();
   };
+
+  const improvedFn = useDebounce(search, 300);
+  const domNode = useClickOutside(closeSearchSuggestion);
 
   return (
     <>
