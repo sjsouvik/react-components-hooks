@@ -1,6 +1,6 @@
 # React components & custom hooks
 
-This is to keep some react components & custom hooks so that anyone can refer to practice for the machine coding round.
+This is to keep some react components & custom hooks that could be used in day to day frontend development.
 
 - [React components](https://github.com/sjsouvik/react-components-hooks/tree/main/src/components)
 
