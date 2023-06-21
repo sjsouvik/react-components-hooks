@@ -11,6 +11,7 @@ import {
   TabExample,
   PhoneNumberInput,
 } from "./components";
+import { TrafficLightWrapper } from "./components/TrafficLight/TrafficLightWrapper";
 
 function App() {
   return (
@@ -36,6 +37,8 @@ function App() {
       <TabExample />
 
       <PhoneNumberInput />
+
+      <TrafficLightWrapper />
     </div>
   );
 }

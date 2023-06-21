@@ -1,0 +1,40 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.light-container {
+  background-color: black;
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.light {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  background-color: lightgray;
+}
+
+.bg-green {
+  background-color: green;
+}
+
+.bg-red {
+  background-color: red;
+}
+
+.bg-yellow {
+  background-color: yellow;
+}
