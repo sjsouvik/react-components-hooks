@@ -8,3 +8,5 @@ export { Comment } from "./Comment/Comment";
 export { ModalWrapper } from "./Modal/Modal";
 export { TabExample } from "./Tabs/Tabs";
 export { PhoneNumberInput } from "./PhoneNumberInput/PhoneNumberInput";
+export { TrafficLightWrapper } from "./TrafficLight/TrafficLightWrapper";
+export { ProgressBarWrapper } from "./ProgressBar/ProgressBarWrapper";

@@ -10,8 +10,9 @@ import {
   ModalWrapper,
   TabExample,
   PhoneNumberInput,
+  TrafficLightWrapper,
+  ProgressBarWrapper,
 } from "./components";
-import { TrafficLightWrapper } from "./components/TrafficLight/TrafficLightWrapper";
 
 function App() {
   return (
@@ -39,6 +40,8 @@ function App() {
       <PhoneNumberInput />
 
       <TrafficLightWrapper />
+
+      <ProgressBarWrapper />
     </div>
   );
 }
