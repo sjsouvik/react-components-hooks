@@ -12,6 +12,7 @@ import {
   PhoneNumberInput,
   TrafficLightWrapper,
   ProgressBarWrapper,
+  ProgressBarsWrapper,
 } from "./components";
 
 function App() {
@@ -42,6 +43,8 @@ function App() {
       <TrafficLightWrapper />
 
       <ProgressBarWrapper />
+
+      <ProgressBarsWrapper />
     </div>
   );
 }

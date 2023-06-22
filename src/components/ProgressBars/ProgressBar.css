@@ -1,0 +1,26 @@
+.bars {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.bar {
+  height: 0.5rem;
+  background-color: lightgray;
+}
+
+.bar-content {
+  background-color: green;
+  height: 100%;
+
+  transform: scaleX(0);
+  transform-origin: left; /* we have to use transform-origin: left so that the bar is "anchored" on the left and expands rightwards. */
+  transition-property: transform;
+  transition-duration: 2000ms;
+  transition-timing-function: linear;
+}
+
+.bar-content-filled {
+  transform: scaleX(1);
+}
