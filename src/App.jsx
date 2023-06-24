@@ -14,6 +14,7 @@ import {
   ProgressBarWrapper,
   ProgressBarsWrapper,
   ProgressBarsWrapperII,
+  ProgressBarsWrapperIII,
 } from "./components";
 
 function App() {
@@ -48,6 +49,8 @@ function App() {
       <ProgressBarsWrapper />
 
       <ProgressBarsWrapperII />
+
+      <ProgressBarsWrapperIII />
     </div>
   );
 }
