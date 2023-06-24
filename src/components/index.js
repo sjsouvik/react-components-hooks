@@ -11,3 +11,4 @@ export { PhoneNumberInput } from "./PhoneNumberInput/PhoneNumberInput";
 export { TrafficLightWrapper } from "./TrafficLight/TrafficLightWrapper";
 export { ProgressBarWrapper } from "./ProgressBar/ProgressBarWrapper";
 export { ProgressBarsWrapper } from "./ProgressBars/ProgressBarsWrapper";
+export { ProgressBarsWrapperII } from "./ProgressBars II/ProgressBarsWrapperII";

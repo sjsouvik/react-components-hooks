@@ -13,6 +13,7 @@ import {
   TrafficLightWrapper,
   ProgressBarWrapper,
   ProgressBarsWrapper,
+  ProgressBarsWrapperII,
 } from "./components";
 
 function App() {
@@ -45,6 +46,8 @@ function App() {
       <ProgressBarWrapper />
 
       <ProgressBarsWrapper />
+
+      <ProgressBarsWrapperII />
     </div>
   );
 }
