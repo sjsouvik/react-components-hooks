@@ -13,3 +13,4 @@ export { ProgressBarWrapper } from "./ProgressBar/ProgressBarWrapper";
 export { ProgressBarsWrapper } from "./ProgressBars/ProgressBarsWrapper";
 export { ProgressBarsWrapperII } from "./ProgressBars II/ProgressBarsWrapperII";
 export { ProgressBarsWrapperIII } from "./ProgressBars III/ProgressBarsWrapperIII";
+export { ProgressBarsWrapperIV } from "./ProgressBars IV/ProgressBarsWrapperIV";

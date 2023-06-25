@@ -1,0 +1,22 @@
+.buttons {
+  display: flex;
+  column-gap: 8px;
+}
+
+.bars {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.bar-container {
+  height: 0.5rem;
+  background-color: lightgray;
+}
+
+.bar-progress {
+  height: 100%;
+  background-color: green;
+  transform-origin: left;
+}
