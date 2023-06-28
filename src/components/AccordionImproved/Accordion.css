@@ -1,0 +1,48 @@
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion-item {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem 0;
+}
+
+.accordion-item:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+
+.accordion-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  border: transparent;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.accordion-title:hover {
+  background-color: #f1f1f1;
+}
+
+.accordion-content {
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.accordion-icon {
+  border: solid currentcolor;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  height: 8px;
+  pointer-events: none;
+  transform: translateY(-2px) rotate(45deg);
+  width: 8px;
+  text-align: right;
+}
+
+.accordion-icon--rotated {
+  transform: translateY(2px) rotate(-135deg);
+}

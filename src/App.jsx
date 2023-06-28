@@ -16,6 +16,7 @@ import {
   ProgressBarsWrapperII,
   ProgressBarsWrapperIII,
   ProgressBarsWrapperIV,
+  AccordionImproved,
 } from "./components";
 
 function App() {
@@ -54,6 +55,8 @@ function App() {
       <ProgressBarsWrapperIII />
 
       <ProgressBarsWrapperIV />
+
+      <AccordionImproved />
     </div>
   );
 }
