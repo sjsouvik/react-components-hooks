@@ -20,6 +20,21 @@ following guidelines for this question:
 
 It is also important that we use a <button> element to build the tabs as they need to be focusable and interactive.
 
+
+We'll be following a modified subset of the necessary keyboard interactions for Tabs https://www.w3.org/WAI/ARIA/apg/patterns/tabpanel/. 
+Note that the tabs component we're building is activated automatically on focus, so the respective tabpanel contents 
+are shown as soon as the focus changes to a different tab.
+
+- When Tab key is pressed:
+  - When focus moves into the tab list, places focus on the active tab element.
+  - When the tab list contains the focus, moves focus to the next element in the page tab sequence outside the tablist, which is the tabpanel.
+
+- When focus is on a tab element in the tab list:
+  - Left Arrow: moves focus to the previous tab. If focus is on the first tab, moves focus to the last tab.
+  - Right Arrow: Moves focus to the next tab. If focus is on the last tab element, moves focus to the first tab.
+  - Home: Moves focus to the first tab. Shows tabpanel content of the newly focused tab.
+  - End: Moves focus to the last tab. Shows tabpanel content of the newly focused tab.
+
 */
 
 import { Tabs } from "./Tabs";

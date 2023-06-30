@@ -84,7 +84,7 @@ export const Tabs = (props) => {
             key={item.name}
             id={getTabPanelId(tabsId, item.name)}
             role="tabpanel"
-            tabIndex={0}
+            tabIndex={0} // to make the tab panel focusable so that it can get the focus next when the tab list contains the focus and tab is pressed
             aria-labelledby={getTabId(tabsId, item.name)}
             hidden={activeTab !== item.name}
           >
