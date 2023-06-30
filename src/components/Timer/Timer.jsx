@@ -1,11 +1,11 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 import "./Timer.css";
 
 const initialTime = { minutes: 0, seconds: 0 };
 
 export const Timer = ({ time }) => {
   const [{ minutes, seconds }, setTimeLeft] = useState(time);
-  const id = useRef(null);
+  const [intervalId, setInterValId] = useState(null);
 
   const startTimerHandler = () => {
     const timerId = setInterval(() => {
@@ -22,29 +22,33 @@ export const Timer = ({ time }) => {
       });
     }, 1000);
 
-    id.current = timerId;
+    setInterValId(timerId);
   };
 
   const stopTimerHandler = () => {
-    clearInterval(id.current);
+    clearInterval(intervalId);
+    setInterValId(null);
   };
 
   const resetTimerHandler = () => {
-    clearInterval(id.current);
+    stopTimerHandler();
     setTimeLeft(time);
+  };
+
+  const isTimerRunning = intervalId !== null;
+
+  const startOrStopTimerHandler = () => {
+    isTimerRunning ? stopTimerHandler() : startTimerHandler();
   };
 
   return (
     <div className="mt-1">
       <h2>Timer</h2>
-      <div>{`${minutes.toString().padStart(2, "0")} : ${seconds
+      <div>{`${minutes.toString().padStart(2, "0")}m : ${seconds
         .toString()
-        .padStart(2, "0")}`}</div>
-      <button className="mt-1" onClick={startTimerHandler}>
-        start
-      </button>
-      <button className="mt-1" onClick={stopTimerHandler}>
-        Stop
+        .padStart(2, "0")}s`}</div>
+      <button className="mt-1" onClick={startOrStopTimerHandler}>
+        {isTimerRunning ? "Stop" : "Start"}
       </button>
       <button className="mt-1" onClick={resetTimerHandler}>
         Reset
