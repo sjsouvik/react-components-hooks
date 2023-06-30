@@ -1,0 +1,31 @@
+:root {
+  --active-color: green;
+}
+
+.tabs {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.tab {
+  padding: 0.25rem 0.5rem;
+  border: 1px solid black;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.tab:hover {
+  border-color: var(--active-color);
+  color: var(--active-color);
+}
+
+.tab-active,
+.tab-active:hover {
+  background-color: var(--active-color);
+  border-color: var(--active-color);
+  color: white;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
