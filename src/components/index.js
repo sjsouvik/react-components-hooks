@@ -15,3 +15,4 @@ export { ProgressBarsWrapperII } from "./ProgressBars II/ProgressBarsWrapperII";
 export { ProgressBarsWrapperIII } from "./ProgressBars III/ProgressBarsWrapperIII";
 export { ProgressBarsWrapperIV } from "./ProgressBars IV/ProgressBarsWrapperIV";
 export { AccordionImproved } from "./AccordionImproved/AccordionImproved";
+export { Stopwatch } from "./Stopwatch/Stopwatch";

@@ -47,12 +47,14 @@ export const Timer = ({ time }) => {
       <div>{`${minutes.toString().padStart(2, "0")}m : ${seconds
         .toString()
         .padStart(2, "0")}s`}</div>
-      <button className="mt-1" onClick={startOrStopTimerHandler}>
-        {isTimerRunning ? "Stop" : "Start"}
-      </button>
-      <button className="mt-1" onClick={resetTimerHandler}>
-        Reset
-      </button>
+      <div className="flex-row">
+        <button className="mt-1" onClick={startOrStopTimerHandler}>
+          {isTimerRunning ? "Stop" : "Start"}
+        </button>
+        <button className="mt-1" onClick={resetTimerHandler}>
+          Reset
+        </button>
+      </div>
     </div>
   );
 };

@@ -1,0 +1,30 @@
+/* body {
+  font-family: sans-serif;
+} */
+
+.time {
+  border: transparent;
+  background-color: transparent;
+  cursor: pointer;
+
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.time-number {
+  font-size: 4rem;
+}
+
+.time-unit {
+  font-size: 1.5rem;
+}
+
+.time-ms {
+  font-size: 2.25rem;
+}
+
+.flex-row {
+  display: flex;
+  gap: 0.5rem;
+}
