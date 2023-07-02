@@ -19,6 +19,7 @@ import {
   AccordionImproved,
   Stopwatch,
   TabsImproved,
+  TicTacToe,
 } from "./components";
 
 function App() {
@@ -63,6 +64,8 @@ function App() {
       <Stopwatch />
 
       <TabsImproved />
+
+      <TicTacToe />
     </div>
   );
 }

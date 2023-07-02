@@ -17,3 +17,4 @@ export { ProgressBarsWrapperIV } from "./ProgressBars IV/ProgressBarsWrapperIV";
 export { AccordionImproved } from "./AccordionImproved/AccordionImproved";
 export { Stopwatch } from "./Stopwatch/Stopwatch";
 export { TabsImproved } from "./TabsImproved/TabsImproved";
+export { TicTacToe } from "./TicTacToe/TicTacToe";

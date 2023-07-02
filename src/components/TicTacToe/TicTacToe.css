@@ -1,0 +1,31 @@
+.tic-tac-toe {
+  max-width: 20rem;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+}
+
+.cell {
+  border: 1px solid black;
+  color: black;
+  background-color: #fff;
+  font-size: min(3rem, 10vw);
+  aspect-ratio: 1/1; /* The `aspect-ratio` property is set to 1 / 1, ensuring that each cell maintains a square shape regardless of its content */
+}
+
+.cell:not(:disabled) {
+  cursor: pointer;
+}
+
+.cell:not(:disabled):hover {
+  background-color: #f1f1f1;
+}
