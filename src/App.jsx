@@ -20,6 +20,7 @@ import {
   Stopwatch,
   TabsImproved,
   TicTacToe,
+  MemoryGame,
 } from "./components";
 
 function App() {
@@ -66,6 +67,8 @@ function App() {
       <TabsImproved />
 
       <TicTacToe />
+
+      <MemoryGame rows={5} cols={4} matchCount={2} waitTime={3000} />
     </div>
   );
 }
