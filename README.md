@@ -65,3 +65,29 @@ This is to keep some react components & custom hooks that could be used in day t
   - [useIsMounted()](https://github.com/sjsouvik/react-components-hooks/blob/main/src/hooks/useIsMounted.js)
 
   - [useTimeout()](https://github.com/sjsouvik/react-components-hooks/blob/main/src/hooks/useTimeout.js)
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/sjsouvik/react-components-hooks.git
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run dev
+```
+
+We can visit `http://localhost:5173/` to see the project running locally
+
+## License
+
+This repository is [MIT licensed](https://github.com/sjsouvik/react-components-hooks/blob/main/LICENSE)
