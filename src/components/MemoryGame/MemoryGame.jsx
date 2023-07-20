@@ -42,6 +42,7 @@ export const MemoryGame = (props) => {
   const clickHandler = (index) => {
     let currentFlipped = flipped;
 
+    // if player flips more cards than the given matchCount of flipped unmatched cards, flips back the previously flipped ones
     if (timer.current) {
       clearTimeout(timer.current);
       timer.current = null;
