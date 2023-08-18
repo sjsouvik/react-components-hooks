@@ -86,8 +86,12 @@ Start the server
   npm run dev
 ```
 
-We can visit `http://localhost:5173/` to see the project running locally
+Now, you can visit `http://localhost:5173/` to see the project running locally
 
 ## License
 
 This repository is [MIT licensed](https://github.com/sjsouvik/react-components-hooks/blob/main/LICENSE)
+
+## Support
+
+Give it a ⭐ if you like it.
