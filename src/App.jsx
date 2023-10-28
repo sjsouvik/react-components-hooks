@@ -21,6 +21,7 @@ import {
   TabsImproved,
   TicTacToe,
   MemoryGame,
+  TransferList,
 } from "./components";
 
 function App() {
@@ -69,6 +70,8 @@ function App() {
       <TicTacToe />
 
       <MemoryGame rows={5} cols={4} matchCount={2} waitTime={3000} />
+
+      <TransferList />
     </div>
   );
 }
