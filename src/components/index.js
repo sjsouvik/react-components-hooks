@@ -20,3 +20,4 @@ export { TabsImproved } from "./TabsImproved/TabsImproved";
 export { TicTacToe } from "./TicTacToe/TicTacToe";
 export { MemoryGame } from "./MemoryGame/MemoryGame";
 export { TransferList } from "./TransferList/TransferList";
+export { MasonryLayout } from "./MasonryLayout/MasonryLayout";

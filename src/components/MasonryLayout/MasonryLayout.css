@@ -1,0 +1,19 @@
+.list {
+  list-style-type: none;
+  position: relative;
+  width: 10rem;
+  margin: 0 auto;
+}
+
+.list-item {
+  position: absolute;
+  border: 1px solid #f1f1f1;
+  border-radius: 0.5rem;
+  background-color: lightcoral;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
