@@ -38,6 +38,10 @@ This is to keep some react components & custom hooks that could be used in day t
 
   - [Progress bar IV](https://github.com/sjsouvik/react-components-hooks/tree/main/src/components/ProgressBars%20IV)
 
+  - [Transfer list](https://github.com/sjsouvik/react-components-hooks/tree/main/src/components/TransferList)
+
+  - [Masonry layout](https://github.com/sjsouvik/react-components-hooks/tree/main/src/components/MasonryLayout)
+
   - [Traffic light](https://github.com/sjsouvik/react-components-hooks/tree/main/src/components/TrafficLight)
 
 - [Custom hooks](https://github.com/sjsouvik/react-components-hooks/tree/main/src/hooks)
