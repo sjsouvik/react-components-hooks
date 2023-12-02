@@ -8,6 +8,8 @@ This is to keep some react components & custom hooks that could be used in day t
 
   - [Autocomplete](https://github.com/sjsouvik/react-components-hooks/tree/main/src/components/AutoComplete)
 
+  - [Carousel](https://github.com/sjsouvik/react-components-hooks/tree/main/src/components/Carousel)
+
   - [Star rating](https://github.com/sjsouvik/react-components-hooks/tree/main/src/components/StartRating)
 
   - [Tabs](https://github.com/sjsouvik/react-components-hooks/tree/main/src/components/TabsImproved)
