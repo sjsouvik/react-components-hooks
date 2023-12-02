@@ -23,12 +23,15 @@ import {
   MemoryGame,
   TransferList,
   MasonryLayout,
+  Carousel,
 } from "./components";
 
 function App() {
   return (
     <div className="App">
       <h1>React Components</h1>
+
+      <Carousel />
 
       <FileExplorer />
 
