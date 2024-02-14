@@ -26,6 +26,8 @@ This is to keep some react components & custom hooks that could be used in day t
 
   - [Tic tac toe](https://github.com/sjsouvik/react-components-hooks/tree/main/src/components/TicTacToe)
 
+  - [Country capital game](https://github.com/sjsouvik/react-components-hooks/tree/main/src/components/CountryCapitalGame)
+
   - [Timer](https://github.com/sjsouvik/react-components-hooks/tree/main/src/components/Timer)
 
   - [Stopwatch](https://github.com/sjsouvik/react-components-hooks/tree/main/src/components/Stopwatch)
