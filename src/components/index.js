@@ -22,3 +22,4 @@ export { MemoryGame } from "./MemoryGame/MemoryGame";
 export { TransferList } from "./TransferList/TransferList";
 export { MasonryLayout } from "./MasonryLayout/MasonryLayout";
 export { Carousel } from "./Carousel/Carousel";
+export { CountryCapitalGame } from "./CountryCapitalGame/CountryCapitalGame";

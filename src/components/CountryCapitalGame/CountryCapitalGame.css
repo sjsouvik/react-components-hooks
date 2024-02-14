@@ -1,0 +1,26 @@
+.board {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.option {
+  border: 3px solid #414141;
+  border-radius: 0.25rem;
+  padding: 0.25rem 1rem;
+  cursor: pointer;
+  transition: all 0.2 ease;
+}
+
+.selected {
+  border-color: blue;
+}
+
+.correct {
+  border-color: green;
+}
+
+.incorrect {
+  border-color: red;
+}
