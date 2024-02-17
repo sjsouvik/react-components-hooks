@@ -10,7 +10,8 @@ export const Game = ({ data }) => {
     setAllOptions(shuffle(data));
   }, []);
 
-  const selectHandler = (selectedItem) => {
+  const selectHandler = (event) => {
+    const selectedItem = event.target.dataset.value;
     if (
       selectedOptions.length === 2 ||
       selectedOptions.includes(selectedItem)
@@ -61,24 +62,23 @@ export const Game = ({ data }) => {
   };
 
   if (allOptions.length === 0) {
-    return <h3>Congratulations! you won the game.</h3>;
+    return <h3 className="text-center">Congratulations! you won the game.</h3>;
   }
 
   return (
-    <>
-      <ul className="board">
-        {allOptions.map((option, index) => {
-          return (
-            <button
-              className={`option ${getClassName(option)}`}
-              key={index}
-              onClick={() => selectHandler(option)}
-            >
-              {option}
-            </button>
-          );
-        })}
-      </ul>
-    </>
+    <ul className="board">
+      {allOptions.map((option) => {
+        return (
+          <button
+            className={`option ${getClassName(option)}`}
+            key={option}
+            data-value={option}
+            onClick={selectHandler}
+          >
+            {option}
+          </button>
+        );
+      })}
+    </ul>
   );
 };

@@ -18,9 +18,13 @@
 }
 
 .correct {
-  border-color: green;
+  border-color: #66cc99;
 }
 
 .incorrect {
   border-color: red;
+}
+
+.text-center {
+  text-align: center;
 }
