@@ -66,7 +66,7 @@ export const Game = ({ data }) => {
   }
 
   return (
-    <ul className="board">
+    <ul className="ccg-board">
       {allOptions.map((option) => {
         return (
           <button
