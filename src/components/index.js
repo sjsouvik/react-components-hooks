@@ -23,3 +23,4 @@ export { TransferList } from "./TransferList/TransferList";
 export { MasonryLayout } from "./MasonryLayout/MasonryLayout";
 export { Carousel } from "./Carousel/Carousel";
 export { CountryCapitalGame } from "./CountryCapitalGame/CountryCapitalGame";
+export { OtpInput } from "./OtpInput/OtpInput";

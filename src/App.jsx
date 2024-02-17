@@ -25,6 +25,7 @@ import {
   MasonryLayout,
   Carousel,
   CountryCapitalGame,
+  OtpInput,
 } from "./components";
 
 function App() {
@@ -77,6 +78,8 @@ function App() {
       <MemoryGame rows={5} cols={4} matchCount={2} waitTime={3000} />
 
       <CountryCapitalGame />
+
+      <OtpInput />
 
       <TransferList />
 
