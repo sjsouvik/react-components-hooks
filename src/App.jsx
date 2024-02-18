@@ -79,7 +79,7 @@ function App() {
 
       <CountryCapitalGame />
 
-      <OtpInput />
+      <OtpInput passwordLength={6} />
 
       <TransferList />
 

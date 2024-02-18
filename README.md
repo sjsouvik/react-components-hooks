@@ -28,6 +28,8 @@ This is to keep some react components & custom hooks that could be used in day t
 
   - [Country capital game](https://github.com/sjsouvik/react-components-hooks/tree/main/src/components/CountryCapitalGame)
 
+  - [OTP input](https://github.com/sjsouvik/react-components-hooks/tree/main/src/components/OtpInput)
+
   - [Timer](https://github.com/sjsouvik/react-components-hooks/tree/main/src/components/Timer)
 
   - [Stopwatch](https://github.com/sjsouvik/react-components-hooks/tree/main/src/components/Stopwatch)

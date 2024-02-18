@@ -13,6 +13,8 @@ export const OtpInput = (props) => {
   }, []);
 
   const updateOtp = (index, value) => {
+    /* taking only the last entered digit here for the given input element, 
+    for example: if we enter 34 in an input element, it should take only the last digit 4 as input */
     const updatedOtpValue = otp.map((char, idx) =>
       idx === index ? value.substring(value.length - 1) : char
     );
@@ -37,13 +39,18 @@ export const OtpInput = (props) => {
   };
 
   const inputKeyDownHandler = (e, index) => {
-    if (e.key === "Backspace" && otp[index] !== "") {
+    if (e.key === "Backspace") {
       updateOtp(index, "");
 
       if (index > 0) {
         inputsRef.current[index - 1].focus();
       }
     }
+  };
+
+  const inputClickHandler = (index) => {
+    // move cursor to the end of the input on click of any input element so that we can update the input element with the latest entered value
+    inputsRef.current[index].setSelectionRange(1, 1);
   };
 
   return (
@@ -66,6 +73,7 @@ export const OtpInput = (props) => {
                 }}
                 onChange={(e) => inputChangeHandler(e, index)}
                 onKeyDown={(e) => inputKeyDownHandler(e, index)}
+                onClick={() => inputClickHandler(index)}
               />
             </li>
           );
