@@ -55,7 +55,7 @@ export const OtpInput = (props) => {
 
   return (
     <div>
-      <h1>Enter your OTP</h1>
+      <h2>Enter your OTP</h2>
       <ul className="otp-container">
         {otp.map((value, index) => {
           return (

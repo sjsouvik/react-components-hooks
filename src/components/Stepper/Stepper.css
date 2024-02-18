@@ -1,0 +1,32 @@
+.stepper-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.step-number {
+  height: 2rem;
+  width: 2rem;
+  border: 1px solid lightgray;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.active {
+  background-color: blue;
+  color: white;
+}
+
+.complete {
+  background-color: green;
+  color: white;
+}
+
+.step-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

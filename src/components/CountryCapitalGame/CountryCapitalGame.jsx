@@ -33,7 +33,7 @@ import "./CountryCapitalGame.css";
 export const CountryCapitalGame = () => {
   return (
     <>
-      <h1>Country capital game</h1>
+      <h2>Country capital game</h2>
       <main>
         <Game data={DATA} />
       </main>

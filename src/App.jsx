@@ -26,6 +26,7 @@ import {
   Carousel,
   CountryCapitalGame,
   OtpInput,
+  StepperWrapper,
 } from "./components";
 
 function App() {
@@ -80,6 +81,8 @@ function App() {
       <CountryCapitalGame />
 
       <OtpInput passwordLength={6} />
+
+      <StepperWrapper />
 
       <TransferList />
 
