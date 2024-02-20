@@ -3,20 +3,20 @@ import { Stepper } from "./Stepper";
 
 const steps = [
   {
-    name: "title1",
-    component: () => <p>content1</p>,
+    name: "Customer info",
+    component: () => <p>Provide your contact details</p>,
   },
   {
-    name: "title2",
-    component: () => <p>content2</p>,
+    name: "Shipping info",
+    component: () => <p>Enter your shipping address.</p>,
   },
   {
-    name: "title3",
-    component: () => <p>content3</p>,
+    name: "Payment",
+    component: () => <p>Complete payment for your order.</p>,
   },
   {
-    name: "title4",
-    component: () => <p>content4</p>,
+    name: "Delivered",
+    component: () => <p>Your order has been delivered.</p>,
   },
 ];
 

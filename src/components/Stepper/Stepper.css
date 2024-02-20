@@ -1,6 +1,10 @@
 .stepper-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+}
+
+.step {
+  z-index: 2;
 }
 
 .step-number {
@@ -8,6 +12,7 @@
   width: 2rem;
   border: 1px solid lightgray;
   border-radius: 50%;
+  background-color: lightgray;
 
   display: flex;
   justify-content: center;
@@ -29,4 +34,24 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.step-progress {
+  position: absolute;
+  top: 0.85rem;
+  height: 0.3rem;
+  border: 1px solid lightgray;
+  border-radius: 1rem;
+  background-color: lightgray;
+  overflow: hidden;
+}
+
+.step-progress-bar {
+  background-color: green;
+  height: 100%;
+  transition: all 0.2 ease;
 }
