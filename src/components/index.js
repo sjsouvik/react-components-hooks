@@ -25,3 +25,4 @@ export { Carousel } from "./Carousel/Carousel";
 export { CountryCapitalGame } from "./CountryCapitalGame/CountryCapitalGame";
 export { OtpInput } from "./OtpInput/OtpInput";
 export { StepperWrapper } from "./Stepper/StepperWrapper";
+export { ContactForm } from "./ContactForm/ContactForm";

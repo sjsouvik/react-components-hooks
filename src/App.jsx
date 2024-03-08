@@ -27,6 +27,7 @@ import {
   CountryCapitalGame,
   OtpInput,
   StepperWrapper,
+  ContactForm,
 } from "./components";
 
 function App() {
@@ -85,6 +86,8 @@ function App() {
       <StepperWrapper />
 
       <TransferList />
+
+      <ContactForm />
 
       <MasonryLayout />
     </div>
