@@ -28,6 +28,7 @@ import {
   OtpInput,
   StepperWrapper,
   ContactForm,
+  FlightBooker,
 } from "./components";
 
 function App() {
@@ -88,6 +89,8 @@ function App() {
       <TransferList />
 
       <ContactForm />
+
+      <FlightBooker />
 
       <MasonryLayout />
     </div>
