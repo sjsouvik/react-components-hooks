@@ -30,6 +30,8 @@ This is to keep some react components & custom hooks that could be used in day t
 
   - [OTP input](https://github.com/sjsouvik/react-components-hooks/tree/main/src/components/OtpInput)
 
+  - [Stepper](https://github.com/sjsouvik/react-components-hooks/tree/main/src/components/Stepper)
+
   - [Timer](https://github.com/sjsouvik/react-components-hooks/tree/main/src/components/Timer)
 
   - [Stopwatch](https://github.com/sjsouvik/react-components-hooks/tree/main/src/components/Stopwatch)
@@ -49,6 +51,11 @@ This is to keep some react components & custom hooks that could be used in day t
   - [Masonry layout](https://github.com/sjsouvik/react-components-hooks/tree/main/src/components/MasonryLayout)
 
   - [Traffic light](https://github.com/sjsouvik/react-components-hooks/tree/main/src/components/TrafficLight)
+
+  - Forms
+    - [Contact form](https://github.com/sjsouvik/react-components-hooks/tree/main/src/components/ContactForm)
+    - [Sign up](https://github.com/sjsouvik/JavaScript-Projects/tree/main/Signup-Form)
+    - [Flight booker](https://github.com/sjsouvik/react-components-hooks/tree/main/src/components/FlightBooker)
 
 - [Custom hooks](https://github.com/sjsouvik/react-components-hooks/tree/main/src/hooks)
 
