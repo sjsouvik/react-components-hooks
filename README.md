@@ -56,6 +56,7 @@ This is to keep some react components & custom hooks that could be used in day t
     - [Contact form](https://github.com/sjsouvik/react-components-hooks/tree/main/src/components/ContactForm)
     - [Sign up](https://github.com/sjsouvik/JavaScript-Projects/tree/main/Signup-Form)
     - [Flight booker](https://github.com/sjsouvik/react-components-hooks/tree/main/src/components/FlightBooker)
+    - [Generate table](https://github.com/sjsouvik/react-components-hooks/tree/main/src/components/GenerateTable)
 
 - [Custom hooks](https://github.com/sjsouvik/react-components-hooks/tree/main/src/hooks)
 
