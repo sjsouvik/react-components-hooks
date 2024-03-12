@@ -1,0 +1,23 @@
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  margin: 0 auto;
+  max-width: 20rem;
+}
+
+.ml-1 {
+  margin-left: 1rem;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 1rem auto;
+}
+
+td {
+  border: 1px solid black;
+  padding: 1rem;
+  text-align: center;
+}

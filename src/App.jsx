@@ -29,6 +29,7 @@ import {
   StepperWrapper,
   ContactForm,
   FlightBooker,
+  GenerateTable,
 } from "./components";
 
 function App() {
@@ -91,6 +92,8 @@ function App() {
       <ContactForm />
 
       <FlightBooker />
+
+      <GenerateTable />
 
       <MasonryLayout />
     </div>
