@@ -30,6 +30,7 @@ import {
   ContactForm,
   FlightBooker,
   GenerateTable,
+  LikeButton,
 } from "./components";
 
 function App() {
@@ -94,6 +95,8 @@ function App() {
       <FlightBooker />
 
       <GenerateTable />
+
+      <LikeButton />
 
       <MasonryLayout />
     </div>

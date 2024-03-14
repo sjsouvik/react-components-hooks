@@ -1,0 +1,39 @@
+:root {
+  --default-color: #888;
+  --active-color: #f00;
+}
+
+.like-button {
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  border-radius: 1.5rem;
+  font-weight: bold;
+  font-size: 1rem;
+
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.like-button:hover {
+  border-color: var(--active-color);
+  color: var(--active-color);
+}
+
+.like-button--default {
+  background-color: white;
+  border: 3px solid var(--default-color);
+  color: var(--default-color);
+}
+
+.like-button--liked,
+.like-button--liked:hover {
+  background-color: var(--active-color);
+  border: 1px solid var(--active-color);
+  color: white;
+}
+
+.error-message {
+  font-size: 0.95rem;
+  color: var(--active-color);
+}

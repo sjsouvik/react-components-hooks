@@ -28,3 +28,4 @@ export { StepperWrapper } from "./Stepper/StepperWrapper";
 export { ContactForm } from "./ContactForm/ContactForm";
 export { FlightBooker } from "./FlightBooker/FlightBooker";
 export { GenerateTable } from "./GenerateTable/GenerateTable";
+export { LikeButton } from "./LikeButton/LikeButton";
