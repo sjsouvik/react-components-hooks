@@ -1,0 +1,29 @@
+.vertical-bar {
+  flex: 1;
+  list-style: none;
+  width: 4rem;
+  height: 100%;
+  color: white;
+  text-align: center;
+
+  position: relative;
+}
+
+.tooltip {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  transform: translate(50%, -120%);
+  width: max-content;
+  font-size: 0.75rem;
+  background-color: black;
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.vertical-bar:hover .tooltip {
+  opacity: 1;
+}

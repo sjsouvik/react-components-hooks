@@ -31,6 +31,7 @@ import {
   FlightBooker,
   GenerateTable,
   LikeButton,
+  BarChart,
 } from "./components";
 
 function App() {
@@ -97,6 +98,8 @@ function App() {
       <GenerateTable />
 
       <LikeButton />
+
+      <BarChart />
 
       <MasonryLayout />
     </div>
