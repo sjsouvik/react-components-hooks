@@ -1,0 +1,29 @@
+.row {
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 1rem;
+
+  width: max-content;
+}
+
+.row:last-child {
+  padding: 0;
+}
+
+.box {
+  background-color: transparent;
+  border: 1px solid black;
+  height: 5rem;
+  width: 5rem;
+  cursor: pointer;
+  transition: background-color 0.4s ease-in-out;
+}
+
+.box-placeholder {
+  width: 5rem;
+}
+
+.box.selected {
+  background-color: green;
+  cursor: not-allowed;
+}

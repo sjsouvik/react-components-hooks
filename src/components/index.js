@@ -30,3 +30,4 @@ export { FlightBooker } from "./FlightBooker/FlightBooker";
 export { GenerateTable } from "./GenerateTable/GenerateTable";
 export { LikeButton } from "./LikeButton/LikeButton";
 export { BarChart } from "./BarChart/BarChart";
+export { GridLight } from "./GridLight/GridLight";

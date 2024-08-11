@@ -32,6 +32,7 @@ import {
   GenerateTable,
   LikeButton,
   BarChart,
+  GridLight,
 } from "./components";
 
 function App() {
@@ -100,6 +101,8 @@ function App() {
       <LikeButton />
 
       <BarChart />
+
+      <GridLight />
 
       <MasonryLayout />
     </div>
