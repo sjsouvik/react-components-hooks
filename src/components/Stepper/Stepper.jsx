@@ -43,7 +43,7 @@ export const Stepper = ({ steps }) => {
                   <div
                     className={`step-number ${
                       index < activeStepIndex ? "complete" : ""
-                    } ${activeStepIndex === index ? "active" : ""}`}
+                    } ${activeStepIndex === index ? "active-step" : ""}`}
                   >
                     {index < activeStepIndex ? (
                       <span>&#10003;</span>
