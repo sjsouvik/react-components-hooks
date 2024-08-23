@@ -33,6 +33,7 @@ import {
   LikeButton,
   BarChart,
   GridLight,
+  CircleContainer,
 } from "./components";
 
 function App() {
@@ -103,6 +104,8 @@ function App() {
       <BarChart />
 
       <GridLight />
+
+      <CircleContainer />
 
       <MasonryLayout />
     </div>
