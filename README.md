@@ -52,6 +52,12 @@ This is to keep some react components & custom hooks that could be used in day t
 
   - [Traffic light](https://github.com/sjsouvik/react-components-hooks/tree/main/src/components/TrafficLight)
 
+  - [Grid light](https://github.com/sjsouvik/react-components-hooks/tree/main/src/components/GridLight)
+
+  - [Bar chart](https://github.com/sjsouvik/react-components-hooks/tree/main/src/components/BarChart)
+
+  - [Circles](https://github.com/sjsouvik/react-components-hooks/tree/main/src/components/Circle)
+
   - Forms
 
     - [Contact form](https://github.com/sjsouvik/react-components-hooks/tree/main/src/components/ContactForm)
