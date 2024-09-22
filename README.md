@@ -20,6 +20,8 @@ This is to keep some react components & custom hooks that could be used in day t
 
   - [Nested comment](https://github.com/sjsouvik/react-components-hooks/tree/main/src/components/Comment)
 
+  - [Nested checkboxes](https://github.com/sjsouvik/react-components-hooks/tree/main/src/components/NestedCheckbox)
+
   - [File explorer](https://github.com/sjsouvik/react-components-hooks/tree/main/src/components/FileExplorer)
 
   - [Memory game](https://github.com/sjsouvik/react-components-hooks/tree/main/src/components/MemoryGame)
