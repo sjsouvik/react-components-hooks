@@ -34,6 +34,7 @@ import {
   BarChart,
   GridLight,
   CircleContainer,
+  NestedCheckbox,
 } from "./components";
 
 function App() {
@@ -106,6 +107,8 @@ function App() {
       <GridLight />
 
       <CircleContainer />
+
+      <NestedCheckbox />
 
       <MasonryLayout />
     </div>

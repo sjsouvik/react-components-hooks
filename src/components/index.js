@@ -32,3 +32,4 @@ export { LikeButton } from "./LikeButton/LikeButton";
 export { BarChart } from "./BarChart/BarChart";
 export { GridLight } from "./GridLight/GridLight";
 export { CircleContainer } from "./Circle/CircleContainer";
+export { NestedCheckbox } from "./NestedCheckbox/NestedCheckbox";
