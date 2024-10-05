@@ -35,6 +35,7 @@ import {
   GridLight,
   CircleContainer,
   NestedCheckbox,
+  ImageCarouselWrapperII,
 } from "./components";
 
 function App() {
@@ -43,6 +44,8 @@ function App() {
       <h1>React Components</h1>
 
       <Carousel />
+
+      <ImageCarouselWrapperII />
 
       <FileExplorer />
 

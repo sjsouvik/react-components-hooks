@@ -33,3 +33,4 @@ export { BarChart } from "./BarChart/BarChart";
 export { GridLight } from "./GridLight/GridLight";
 export { CircleContainer } from "./Circle/CircleContainer";
 export { NestedCheckbox } from "./NestedCheckbox/NestedCheckbox";
+export { ImageCarouselWrapperII } from "./ImageCarousel II/ImageCarouselWrapperII";

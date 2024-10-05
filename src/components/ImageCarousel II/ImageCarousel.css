@@ -1,0 +1,84 @@
+.carousel-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-carousel {
+  background-color: black;
+  height: 400px;
+  width: min(600px, 100vw);
+  overflow: hidden;
+  position: relative;
+}
+
+.images {
+  display: flex;
+}
+
+.image-transitioning {
+  transition: transform 0.5s linear;
+}
+
+.carousel-image {
+  object-fit: contain;
+  height: 400px;
+  width: min(600px, 100vw);
+}
+
+.carousel-btn {
+  cursor: pointer;
+  border: none;
+  background-color: #0008;
+  color: white;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-btn:hover {
+  background-color: #000b;
+}
+
+.prev-btn {
+  left: 0.5rem;
+}
+
+.next-btn {
+  right: 0.5rem;
+}
+
+.pages {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 0.75rem;
+  background-color: black;
+  position: absolute;
+  left: 50%;
+  bottom: 3rem;
+  transform: translateX(-50%);
+}
+
+.page {
+  height: 0.5rem;
+  width: 0.5rem;
+  padding: 0;
+  border-color: transparent;
+  background-color: gray;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.page.active {
+  background-color: white;
+}
+
+.page:hover {
+  background-color: lightgray;
+}
