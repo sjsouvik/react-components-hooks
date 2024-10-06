@@ -10,6 +10,10 @@ This is to keep some react components & custom hooks that could be used in day t
 
   - [Carousel](https://github.com/sjsouvik/react-components-hooks/tree/main/src/components/Carousel)
 
+  - [Image Carousel II](https://github.com/sjsouvik/react-components-hooks/tree/main/src/components/ImageCarousel%20II)
+
+  - [Image Carousel III](https://github.com/sjsouvik/react-components-hooks/tree/main/src/components/ImageCarousel%20III)
+
   - [Star rating](https://github.com/sjsouvik/react-components-hooks/tree/main/src/components/StartRating)
 
   - [Tabs](https://github.com/sjsouvik/react-components-hooks/tree/main/src/components/TabsImproved)
