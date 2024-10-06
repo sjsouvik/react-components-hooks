@@ -4,9 +4,11 @@ import "./ImageCarousel.css";
 
 export const ImageCarouselWrapperIII = () => {
   return (
-    <div className="wrapper">
+    <>
       <h2>Image Carousel III</h2>
-      <ImageCarousel images={images} />
-    </div>
+      <div className="carousel-wrapper">
+        <ImageCarousel images={images} />
+      </div>
+    </>
   );
 };
