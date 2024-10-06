@@ -36,6 +36,7 @@ import {
   CircleContainer,
   NestedCheckbox,
   ImageCarouselWrapperII,
+  ImageCarouselWrapperIII,
 } from "./components";
 
 function App() {
@@ -46,6 +47,8 @@ function App() {
       <Carousel />
 
       <ImageCarouselWrapperII />
+
+      <ImageCarouselWrapperIII />
 
       <FileExplorer />
 

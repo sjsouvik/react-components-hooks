@@ -1,0 +1,14 @@
+.transition-left {
+  transform: translateX(-100%);
+}
+
+.transition-right {
+  transform: translateX(100%);
+}
+
+.image-carousel__image {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+  transition: transform 0.5s linear;
+}
