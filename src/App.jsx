@@ -37,6 +37,7 @@ import {
   NestedCheckbox,
   ImageCarouselWrapperII,
   ImageCarouselWrapperIII,
+  OtpInputII,
 } from "./components";
 
 function App() {
@@ -95,6 +96,21 @@ function App() {
       <CountryCapitalGame />
 
       <OtpInput passwordLength={6} />
+
+      <OtpInputII
+        onSubmit={(otp) => {
+          fetch("https://www.greatfrontend.com/api/questions/auth-code-input", {
+            method: "POST",
+            body: JSON.stringify({ otp }),
+            headers: {
+              "Content-Type": "application/json",
+            },
+          }).then(async (res) => {
+            const message = await res.text();
+            alert(message);
+          });
+        }}
+      />
 
       <StepperWrapper />
 

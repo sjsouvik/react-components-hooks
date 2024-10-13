@@ -35,3 +35,4 @@ export { CircleContainer } from "./Circle/CircleContainer";
 export { NestedCheckbox } from "./NestedCheckbox/NestedCheckbox";
 export { ImageCarouselWrapperII } from "./ImageCarousel II/ImageCarouselWrapperII";
 export { ImageCarouselWrapperIII } from "./ImageCarousel III/ImageCarouselWrapperIII";
+export { OtpInputII } from "./OtpInput II/OtpInputII";

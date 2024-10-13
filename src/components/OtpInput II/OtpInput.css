@@ -1,0 +1,47 @@
+.otp-container {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.cell {
+  --size: 3rem;
+  height: var(--size);
+  width: var(--size);
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.button {
+  cursor: pointer;
+  padding: 0.5rem 1.25rem;
+  outline: none;
+}
+
+.button:focus {
+  outline: 2px solid black;
+  outline-offset: 1px;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.reset-btn {
+  background-color: transparent;
+  border: 2px solid black;
+  font-size: 1.1rem;
+}
+
+.submit-btn {
+  background-color: black;
+  color: white;
+  font-size: 1.1rem;
+}
