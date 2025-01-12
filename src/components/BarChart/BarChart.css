@@ -1,7 +1,7 @@
 .chart-container {
   height: 16rem;
   width: 50%;
-  margin-bottom: 3rem;
+  margin: 3rem 0;
   position: relative;
 }
 

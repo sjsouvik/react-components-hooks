@@ -1,33 +1,58 @@
-import React, { useMemo } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { Bar } from "./Bar";
+import { Select } from "./Select";
+import { OPTIONS, CHART_DATA, getData } from "./data";
 import "./BarChart.css";
 
-const CHART_DATA = [
-  { id: "dep-1", name: "Legal", ticketCount: 32, colour: "#3F888F" },
-  { id: "dep-2", name: "Sales", ticketCount: 20, colour: "#FFA420" },
-  { id: "dep-3", name: "Engineering", ticketCount: 60, colour: "#287233" },
-  { id: "dep-4", name: "Manufacturing", ticketCount: 5, colour: "#4E5452" },
-  { id: "dep-5", name: "Maintenance", ticketCount: 14, colour: "#642424" },
-  {
-    id: "dep-6",
-    name: "Human Resourcing",
-    ticketCount: 35,
-    colour: "#1D1E33",
-  },
-  { id: "dep-7", name: "Events", ticketCount: 43, colour: "#E1CC4F" },
-];
+// asked in Atlassian
 
 export const BarChart = () => {
+  const [chartData, setChartData] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const data = await getData();
+      setChartData(data);
+    };
+
+    fetchData();
+  }, []);
+
   const maxTicketCount = useMemo(() => {
     return Math.max(...CHART_DATA.map((data) => data.ticketCount));
   }, []);
 
+  const sortData = (sortType) => {
+    switch (sortType) {
+      case "ascending": {
+        const updatedData = [...chartData].sort(
+          (a, b) => a.ticketCount - b.ticketCount
+        );
+        setChartData(updatedData);
+        break;
+      }
+
+      case "descending": {
+        const updatedData = [...chartData].sort(
+          (a, b) => b.ticketCount - a.ticketCount
+        );
+        setChartData(updatedData);
+        break;
+      }
+
+      default:
+        setChartData(CHART_DATA);
+        break;
+    }
+  };
+
   return (
     <div>
       <h2>Bar Chart</h2>
+      <Select options={OPTIONS} sortData={sortData} />
       <div className="chart-container">
         <ul className="chart">
-          {CHART_DATA.map((data) => (
+          {chartData.map((data) => (
             <Bar
               key={data.id}
               {...data}
