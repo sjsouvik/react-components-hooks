@@ -4,7 +4,7 @@
   margin-bottom: 1rem;
 }
 
-.cell {
+.otp-cell {
   --size: 3rem;
   height: var(--size);
   width: var(--size);

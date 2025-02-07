@@ -33,7 +33,7 @@ import "./CountryCapitalGame.css";
 export const CountryCapitalGame = () => {
   return (
     <>
-      <h2>Country capital game</h2>
+      <h2>Country capital game (asked in Zepto)</h2>
       <main>
         <Game data={DATA} />
       </main>

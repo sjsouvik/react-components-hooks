@@ -48,7 +48,7 @@ export const BarChart = () => {
 
   return (
     <div>
-      <h2>Bar Chart</h2>
+      <h2>Bar Chart (asked in Atlassian)</h2>
       <Select options={OPTIONS} sortData={sortData} />
       <div className="chart-container">
         <ul className="chart">

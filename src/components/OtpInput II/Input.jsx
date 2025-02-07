@@ -16,7 +16,7 @@ export const Input = (props) => {
       value={value}
       maxLength={1}
       inputMode="numeric"
-      className="cell"
+      className="otp-cell"
       ref={ref}
       {...restProps}
     />

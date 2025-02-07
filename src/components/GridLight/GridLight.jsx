@@ -76,7 +76,7 @@ export const GridLight = () => {
 
   return (
     <>
-      <h2>Grid Light</h2>
+      <h2>Grid Light (asked in PayPal)</h2>
       <div onClick={boxClickHandler}>
         {data.map((row, rowIndex) => {
           return (
