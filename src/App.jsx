@@ -38,6 +38,7 @@ import {
   ImageCarouselWrapperII,
   ImageCarouselWrapperIII,
   OtpInputII,
+  Timeline,
 } from "./components";
 
 function App() {
@@ -131,6 +132,8 @@ function App() {
       <CircleContainer />
 
       <NestedCheckbox />
+
+      <Timeline />
 
       <MasonryLayout />
     </div>
