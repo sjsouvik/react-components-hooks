@@ -37,3 +37,4 @@ export { ImageCarouselWrapperII } from "./ImageCarousel II/ImageCarouselWrapperI
 export { ImageCarouselWrapperIII } from "./ImageCarousel III/ImageCarouselWrapperIII";
 export { OtpInputII } from "./OtpInput II/OtpInputII";
 export { Timeline } from "./Timeline/Timeline";
+export { TypeChecker } from "./TypeChecker/TypeChecker";

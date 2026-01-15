@@ -1,0 +1,14 @@
+.character {
+  font-size: 1.2rem;
+  opacity: 0.5;
+}
+
+.character.correct {
+  color: green;
+  opacity: 1;
+}
+
+.character.incorrect {
+  color: red;
+  opacity: 1;
+}

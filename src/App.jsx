@@ -39,6 +39,7 @@ import {
   ImageCarouselWrapperIII,
   OtpInputII,
   Timeline,
+  TypeChecker,
 } from "./components";
 
 function App() {
@@ -134,6 +135,8 @@ function App() {
       <NestedCheckbox />
 
       <Timeline />
+
+      <TypeChecker />
 
       <MasonryLayout />
     </div>
